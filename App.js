@@ -1,6 +1,7 @@
 const bodyParser = require("body-parser");
 const express = require("express");
 const studentRouter = require("./Routes/Student");
+const cookieParser = require("cookie-parser");
 require("dotenv").config();
 
 //Intializing
@@ -10,6 +11,7 @@ const port = 3001;
 //Middleware
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cookieParser());
 
 //Routes
 app.use(studentRouter);

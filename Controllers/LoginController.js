@@ -20,7 +20,7 @@ exports.studentLogin = (req, res, next) => {
       res.cookie("token", token, {
         httpOnly: true,
       });
-      res.status(200).redirect("/register");
+      res.redirect("/");
     } else {
       notifier.notify("Password Incorrect");
       res.redirect("/login");
