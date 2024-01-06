@@ -1,6 +1,7 @@
 const bodyParser = require("body-parser");
 const express = require("express");
 const studentRouter = require("./Routes/Student");
+require("dotenv").config();
 
 //Intializing
 const app = express();
