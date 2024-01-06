@@ -4,7 +4,7 @@ const fs = require("fs");
 
 const p = path.join(pathRoot, "Datas", "Students.json");
 
-module.exports = class Student {
+module.exports = class Register {
   constructor(val) {
     this.email = val.email;
     this.name = val.name;
