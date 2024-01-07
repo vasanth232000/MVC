@@ -1,4 +1,39 @@
 <%- include('includes/head.ejs'); %>
-    <h1>Dashboard</h1>
+    <div class="container-fluid p-5">
+        <% if(quiz) { %>
+            <div class="row">
+                <% quiz.map((item)=>{ %>
+                    <div class="col-4 mb-4">
+                        <div class="card dashboard-card">
+                            <h4 class="text-capitalize">
+                                <%= item.name %> MCQ'S
+                            </h4>
+                            <div class="low-row">
+                                <div>
+                                    <h6>Questions</h6>
+                                    <p>
+                                        <%= item.questions %>
+                                    </p>
+                                </div>
+                                <div>
+                                    <h6>Marks</h6>
+                                    <p>
+                                        <%= item.marks %>
+                                    </p>
+                                </div>
+                                <div>
+                                    <h6>Max Score</h6>
+                                    <p>-</p>
+                                </div>
+                            </div>
+                            <a href="/<%= item.name %>" class="test-btn">Take Test</a>
+                        </div>
+                    </div>
+                    <% }) %>
+            </div>
+            <% }else{ %>
+                <h3>No Quiz Available</h3>
+                <% } %>
+    </div>
     <%- include('includes/user.ejs') %>
         <%- include('includes/end.ejs'); %>

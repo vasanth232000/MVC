@@ -13,12 +13,12 @@
 }
 
 .fab:hover {
-    height: 344px;
+    height: 155px;
 }
 
-.fab:hover .mainop {
+/* .fab:hover .mainop {
     transform: rotate(180deg);
-}
+} */
 
 .mainop {
     margin: auto;
@@ -31,6 +31,7 @@
     background-color: #f44336;
     border-radius: 32px;
     z-index: 6;
+    cursor: pointer;
 }
 
 .mainopShadow {
@@ -43,10 +44,13 @@
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.mainop i {
-    margin-top: 16px;
-    font-size: 32px;
-    color: #fff;
+.mainop {
+    padding: 15px;
+}
+
+.mainop img {
+    width: 100%;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(149deg) brightness(101%) contrast(102%);
 }
 
 .minifab {

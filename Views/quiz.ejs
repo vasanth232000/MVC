@@ -1,0 +1,41 @@
+<%- include('includes/head.ejs'); %>
+    <div class="quiz-container">
+        <div class="header">
+            <div>QUESTION 1/<%= data.length %>
+            </div>
+        </div>
+        <div class="row p-5">
+            <div class="col-6">
+                <% questionId=1 %>
+                    <% data.map((item,index)=>{ %>
+                        <fieldset class="<%= item.id == questionId ? 'question-active':''  %>">
+                            <h4 class="question">
+                                <%= item.question %>
+                            </h4>
+                            <% item.choices.map((item,index)=>{ %>
+                                <div class="choose mb-3 delay-<%= index %>00 bounce-left">
+                                    <input type="radio" value="<%= item %>">
+                                    <label for="">
+                                        <%= item %>
+                                    </label>
+                                </div>
+                                <% }) %>
+
+                                    <% if(index !==0){ %>
+                                        <button class="last-btn mt-3 prevButton">Last Question</button>
+                                        <% } %>
+                                            <% if(index !==data.length-1){ %>
+                                                <button class="next-btn mt-3 nextButton">Next Question
+                                                </button>
+                                                <% } %>
+                        </fieldset>
+                        <% }) %>
+            </div>
+            <div class="col-6 text-center">
+                <img src="images/side.png" alt="" class="side-img">
+            </div>
+        </div>
+    </div>
+    <script src="js/quiz.js"></script>
+    <%- include('includes/user.ejs') %>
+        <%- include('includes/end.ejs'); %>

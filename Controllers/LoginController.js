@@ -30,3 +30,8 @@ exports.studentLogin = (req, res, next) => {
     res.redirect("/register");
   }
 };
+
+exports.studentLogout = (req, res, next) => {
+  res.clearCookie("token");
+  res.redirect("/login");
+};
