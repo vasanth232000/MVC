@@ -139,3 +139,7 @@ fieldset {
         transform: translateX(0);
     }
 }
+
+#submitBtn:disabled {
+    opacity: 0.5;
+}

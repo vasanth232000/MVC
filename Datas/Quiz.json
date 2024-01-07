@@ -8,28 +8,28 @@
     },
         {
         "id":2,
-        "question":"Which of the following statements are true ?",
+        "question":"Which of the follow statements are true ?",
         "answer":"js is Server Side Language",
         "choices":["js is Server Side Language","js is the Client Side Language","js is both Server Side and Client Side Language.","None of the above."],
         "score": 5
     },
         {
         "id":3,
-        "question":"Which of the following statements are true ?",
+        "question":"Which of following statements are true ?",
         "answer":"js is Server Side Language",
         "choices":["js is Server Side Language","js is the Client Side Language","js is both Server Side and Client Side Language.","None of the above."],
         "score": 5
     },
         {
         "id":4,
-        "question":"Which of the following statements are true ?",
+        "question":"Which of the following statements true ?",
         "answer":"js is Server Side Language",
         "choices":["js is Server Side Language","js is the Client Side Language","js is both Server Side and Client Side Language.","None of the above."],
         "score": 5
     },
         {
         "id":5,
-        "question":"Which of the following statements are true ?",
+        "question":"the following statements are true ?",
         "answer":"js is Server Side Language",
         "choices":["js is Server Side Language","js is the Client Side Language","js is both Server Side and Client Side Language.","None of the above."],
         "score": 5

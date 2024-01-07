@@ -1,0 +1,51 @@
+<%- include('includes/head.ejs'); %>
+    <div class="p-5">
+        <form class="row g-3 needs-validation" action="/add" method="POST" novalidate>
+            <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">Quiz Title</label>
+                <input type="text" class="form-control" id="validationCustom01" value="" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Enter a valid title.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Total Questions</label>
+                <select class="form-select" id="questionSelect" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                </select>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Please Select.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustom03" class="form-label">Marks for each Question</label>
+                <input type="number" class="form-control" min="1" max="10" id="validationCustom03" value="" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Only 1 to 10 allowed.
+                </div>
+            </div>
+            <h4>Please enter questions and choices</h4>
+            <div id="q/a">
+
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+        </form>
+    </div>
+    <script src="js/admin.js"></script>
+    <%- include('includes/user.ejs') %>
+        <%- include('includes/end.ejs'); %>

@@ -1,0 +1,10 @@
+.choice-row .col-md-3 {
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: baseline;
+}
+
+.choice-row .col-md-3 input[type="text"] {
+    width: 90%;
+    max-height: 38px;
+}
