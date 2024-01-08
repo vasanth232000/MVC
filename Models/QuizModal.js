@@ -8,7 +8,26 @@ module.exports = class Quiz {
   constructor(val) {
     this.quizDetails = [];
     this.currentQuiz = {};
-    this.title = val;
+    this.currentValue = val;
+  }
+
+  addQuiz() {
+    let quizData = [];
+    try {
+      if (fs.existsSync(p)) {
+        const data = fs.readFileSync(p, "utf-8");
+        quizData = JSON.parse(data);
+        quizData.push(this.currentValue);
+        fs.writeFileSync(p, JSON.stringify(quizData), (err) => {
+          console.log(err);
+        });
+      }
+    } catch (err) {
+      quizData.push(this.currentValue);
+      fs.writeFileSync(p, JSON.stringify(quizData), (err) => {
+        console.log(err);
+      });
+    }
   }
 
   gatherDetails() {
@@ -45,7 +64,7 @@ module.exports = class Quiz {
         const data = fs.readFileSync(p, "utf-8");
         quizData = JSON.parse(data);
         quizData.map((item) => {
-          if (Object.keys(item) == this.title) {
+          if (Object.keys(item) == this.currentValue) {
             this.currentQuiz = item;
           }
         });

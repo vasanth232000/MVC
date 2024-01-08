@@ -1,74 +1,158 @@
-[{"node.js":[
+[
     {
-        "id":1,
-        "question":"Which of the following statements are true ?",
-        "answer":"js is Server Side Language",
-        "choices":["js is Server Side Language","js is the Client Side Language","js is both Server Side and Client Side Language.","None of the above."],
-        "score": 5
+        "node.js": [
+            {
+                "id": 1,
+                "question": "Which of the following statements are true ?",
+                "answer": "js is Server Side Language",
+                "choices": [
+                    "js is Server Side Language",
+                    "js is the Client Side Language",
+                    "js is both Server Side and Client Side Language.",
+                    "None of the above."
+                ],
+                "score": 5
+            },
+            {
+                "id": 2,
+                "question": "Which of the follow statements are true ?",
+                "answer": "js is Server Side Language",
+                "choices": [
+                    "js is Server Side Language",
+                    "js is the Client Side Language",
+                    "js is both Server Side and Client Side Language.",
+                    "None of the above."
+                ],
+                "score": 5
+            },
+            {
+                "id": 3,
+                "question": "Which of following statements are true ?",
+                "answer": "js is Server Side Language",
+                "choices": [
+                    "js is Server Side Language",
+                    "js is the Client Side Language",
+                    "js is both Server Side and Client Side Language.",
+                    "None of the above."
+                ],
+                "score": 5
+            },
+            {
+                "id": 4,
+                "question": "Which of the following statements true ?",
+                "answer": "js is Server Side Language",
+                "choices": [
+                    "js is Server Side Language",
+                    "js is the Client Side Language",
+                    "js is both Server Side and Client Side Language.",
+                    "None of the above."
+                ],
+                "score": 5
+            },
+            {
+                "id": 5,
+                "question": "the following statements are true ?",
+                "answer": "js is Server Side Language",
+                "choices": [
+                    "js is Server Side Language",
+                    "js is the Client Side Language",
+                    "js is both Server Side and Client Side Language.",
+                    "None of the above."
+                ],
+                "score": 5
+            }
+        ]
     },
-        {
-        "id":2,
-        "question":"Which of the follow statements are true ?",
-        "answer":"js is Server Side Language",
-        "choices":["js is Server Side Language","js is the Client Side Language","js is both Server Side and Client Side Language.","None of the above."],
-        "score": 5
-    },
-        {
-        "id":3,
-        "question":"Which of following statements are true ?",
-        "answer":"js is Server Side Language",
-        "choices":["js is Server Side Language","js is the Client Side Language","js is both Server Side and Client Side Language.","None of the above."],
-        "score": 5
-    },
-        {
-        "id":4,
-        "question":"Which of the following statements true ?",
-        "answer":"js is Server Side Language",
-        "choices":["js is Server Side Language","js is the Client Side Language","js is both Server Side and Client Side Language.","None of the above."],
-        "score": 5
-    },
-        {
-        "id":5,
-        "question":"the following statements are true ?",
-        "answer":"js is Server Side Language",
-        "choices":["js is Server Side Language","js is the Client Side Language","js is both Server Side and Client Side Language.","None of the above."],
-        "score": 5
-    }
-]},
-{"java":[
     {
-        "id":1,
-        "question":"Which of the following statements are true ?",
-        "answer":"js is Server Side Language",
-        "choices":["js is Server Side Language","js is the Client Side Language","js is both Server Side and Client Side Language.","None of the above."],
-        "score": 5
+        "java": [
+            {
+                "id": 1,
+                "question": "Which of the following statements are true ?",
+                "answer": "js is Server Side Language",
+                "choices": [
+                    "js is Server Side Language",
+                    "js is the Client Side Language",
+                    "js is both Server Side and Client Side Language.",
+                    "None of the above."
+                ],
+                "score": 5
+            },
+            {
+                "id": 2,
+                "question": "Which of the following statements are true ?",
+                "answer": "js is Server Side Language",
+                "choices": [
+                    "js is Server Side Language",
+                    "js is the Client Side Language",
+                    "js is both Server Side and Client Side Language.",
+                    "None of the above."
+                ],
+                "score": 5
+            },
+            {
+                "id": 3,
+                "question": "Which of the following statements are true ?",
+                "answer": "js is Server Side Language",
+                "choices": [
+                    "js is Server Side Language",
+                    "js is the Client Side Language",
+                    "js is both Server Side and Client Side Language.",
+                    "None of the above."
+                ],
+                "score": 5
+            },
+            {
+                "id": 4,
+                "question": "Which of the following statements are true ?",
+                "answer": "js is Server Side Language",
+                "choices": [
+                    "js is Server Side Language",
+                    "js is the Client Side Language",
+                    "js is both Server Side and Client Side Language.",
+                    "None of the above."
+                ],
+                "score": 5
+            },
+            {
+                "id": 5,
+                "question": "Which of the following statements are true ?",
+                "answer": "js is Server Side Language",
+                "choices": [
+                    "js is Server Side Language",
+                    "js is the Client Side Language",
+                    "js is both Server Side and Client Side Language.",
+                    "None of the above."
+                ],
+                "score": 5
+            }
+        ]
     },
-        {
-        "id":2,
-        "question":"Which of the following statements are true ?",
-        "answer":"js is Server Side Language",
-        "choices":["js is Server Side Language","js is the Client Side Language","js is both Server Side and Client Side Language.","None of the above."],
-        "score": 5
-    },
-        {
-        "id":3,
-        "question":"Which of the following statements are true ?",
-        "answer":"js is Server Side Language",
-        "choices":["js is Server Side Language","js is the Client Side Language","js is both Server Side and Client Side Language.","None of the above."],
-        "score": 5
-    },
-        {
-        "id":4,
-        "question":"Which of the following statements are true ?",
-        "answer":"js is Server Side Language",
-        "choices":["js is Server Side Language","js is the Client Side Language","js is both Server Side and Client Side Language.","None of the above."],
-        "score": 5
-    },
-        {
-        "id":5,
-        "question":"Which of the following statements are true ?",
-        "answer":"js is Server Side Language",
-        "choices":["js is Server Side Language","js is the Client Side Language","js is both Server Side and Client Side Language.","None of the above."],
-        "score": 5
+    {
+        "Java adv": [
+            {
+                "id": 1,
+                "question": "Which of the following is not a Java features?",
+                "answer": "Use of pointers",
+                "choices": [
+                    "Dynamic",
+                    "Architecture Neutral",
+                    "Object-oriented",
+                    "Use of pointers"
+                ],
+                "score": 5
+            },
+            {
+                "id": 2,
+                "question": "The \\u0021 article referred to as a",
+                "answer": "Unicode escape sequence",
+                "choices": [
+                    "Unicode escape sequence",
+                    "Line feed",
+                    "Hexadecimal",
+                    "Octal escape"
+                ],
+                "score": 5
+            }
+        ]
     }
-]}]
+]

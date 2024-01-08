@@ -5,6 +5,7 @@ const DashboardController = require("../Controllers/DashboardController");
 const QuizController = require("../Controllers/QuizController");
 const Auth = require("../Middlewares/AuthGuard");
 const AdminController = require("../Controllers/AdminController");
+const validate = require("../Models/ValidateModal");
 
 const router = express.Router();
 
@@ -22,8 +23,13 @@ router.get("/logout", loginController.studentLogout);
 
 router.get("/admin", Auth.authGuard, AdminController.getAdminPage);
 
-router.post("/add", (req, res, next) => {
-  console.log(req.body);
+router.post("/add", AdminController.addQuiz);
+
+router.post("/validate", (req, res, next) => {
+  req.body.userId = req.cookies.user.stud_id;
+  const ValidateQuiz = new validate(req.body);
+  const currentScore = ValidateQuiz.getQuizScore();
+  console.log(currentScore);
 });
 
 router.get("/:title", Auth.authGuard, QuizController.getQuizPage);

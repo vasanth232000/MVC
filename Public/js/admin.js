@@ -30,7 +30,7 @@ questionSelect.addEventListener("change", (e) => {
   for (let i = 1; i <= count; i++) {
     data += ` <div class="row choice-row">
                     <div class="col-md-12 mt-3 mb-3">
-                        <input type="text" placeholder="Question ${i}" class="form-control" min="1" max="10" id="validationCustom03" value=""
+                        <input type="text" placeholder="Question ${i}" name="questions" class="form-control" min="1" max="10" id="validationCustom03" value=""
                             required>
                         <div class="invalid-feedback">
                             Please enter the question.
@@ -38,7 +38,7 @@ questionSelect.addEventListener("change", (e) => {
                     </div>
                     <div class="col-md-3 d-flex">
                         <input type="radio" class="choice-radio" onchange="assignValue(this)" name="answer${i}" required>
-                        <input type="text" class="form-control" min="1" max="10" id="validationCustom03" value=""
+                        <input type="text" class="form-control" name="choice${i}" min="1" max="10" id="validationCustom03" value=""
                             required>
                         <div class="invalid-feedback w-100">
                             Please enter the choice.
@@ -46,7 +46,7 @@ questionSelect.addEventListener("change", (e) => {
                     </div>
                     <div class="col-md-3 d-flex">
                         <input type="radio" class="choice-radio" onchange="assignValue(this)" name="answer${i}" required>
-                        <input type="text" class="form-control" min="1" max="10" id="validationCustom03" value=""
+                        <input type="text" class="form-control" name="choice${i}" min="1" max="10" id="validationCustom03" value=""
                             required>
                         <div class="invalid-feedback w-100">
                             Please enter the choice.
@@ -54,7 +54,7 @@ questionSelect.addEventListener("change", (e) => {
                     </div>
                     <div class="col-md-3 d-flex">
                         <input type="radio" class="choice-radio" onchange="assignValue(this)" name="answer${i}" required>
-                        <input type="text" class="form-control" min="1" max="10" id="validationCustom03" value=""
+                        <input type="text" class="form-control" name="choice${i}" min="1" max="10" id="validationCustom03" value=""
                             required>
                         <div class="invalid-feedback w-100">
                             Please enter the choice.
@@ -62,7 +62,7 @@ questionSelect.addEventListener("change", (e) => {
                     </div>
                     <div class="col-md-3 d-flex">
                         <input type="radio" class="choice-radio" onchange="assignValue(this)" name="answer${i}" required>
-                        <input type="text" class="form-control" min="1" max="10" id="validationCustom03" value=""
+                        <input type="text" class="form-control" name="choice${i}" min="1" max="10" id="validationCustom03" value=""
                             required>
                         <div class="invalid-feedback w-100">
                             Please enter the choice.

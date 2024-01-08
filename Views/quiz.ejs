@@ -1,14 +1,15 @@
 <%- include('includes/head.ejs'); %>
     <div class="quiz-container">
         <div class="header">
-            <div>QUESTION <span id="currentQue">1</span>/<%= data.length %>
+            <div>QUESTION <span id="currentQue">1</span>/<%= data?.length %>
             </div>
         </div>
         <div class="row p-5">
             <div class="col-6">
                 <form action="/validate" method="post" id="quizForm">
                     <% questionId=1 %>
-                        <% data.map((item,index)=>{ %>
+                        <input type="hidden" name="quiztitle" value="<%= quizName %>">
+                        <% data?.map((item,index)=>{ %>
                             <fieldset class="<%= item.id == questionId ? 'question-active':''  %>">
                                 <h4 class="question">
                                     <%= item.question %>

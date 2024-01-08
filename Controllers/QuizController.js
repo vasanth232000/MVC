@@ -13,5 +13,6 @@ exports.getQuizPage = (req, res, next) => {
     path: "quiz",
     userName: user.name,
     data: data[title],
+    quizName: title,
   });
 };
