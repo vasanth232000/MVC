@@ -8,9 +8,11 @@ module.exports = class ValidateQuiz {
   constructor(val) {
     this.currentVal = val;
     this.quizValues = {
-      title: "",
-      score: 0,
-      user_id: val.userId || "",
+      id:val.userId,
+      data:[{
+        title:"",
+        score:0
+      }]
     };
   }
 
@@ -23,12 +25,12 @@ module.exports = class ValidateQuiz {
         quizData.map((quiz) => {
           const quizKey = Object.keys(quiz);
           if (quizKey[0] === this.currentVal.quiztitle) {
+            this.quizValues.data[0].title = quizKey[0];
             quiz[quizKey[0]].map((item) => {
               for (const key in this.currentVal) {
                 if (key == item.question) {
                   if (item.answer == this.currentVal[item.question]) {
-                    this.quizValues.title = quizKey[0];
-                    this.quizValues.score += item.score;
+                    this.quizValues.data[0].score += item.score;
                   }
                 }
               }

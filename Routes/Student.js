@@ -6,6 +6,7 @@ const QuizController = require("../Controllers/QuizController");
 const Auth = require("../Middlewares/AuthGuard");
 const AdminController = require("../Controllers/AdminController");
 const validate = require("../Models/ValidateModal");
+const userQuiz = require("../Models/UserScoreModal");
 
 const router = express.Router();
 
@@ -29,7 +30,9 @@ router.post("/validate", (req, res, next) => {
   req.body.userId = req.cookies.user.stud_id;
   const ValidateQuiz = new validate(req.body);
   const currentScore = ValidateQuiz.getQuizScore();
-  console.log(currentScore);
+  const userQuizData = new userQuiz(currentScore);
+  userQuizData.checkAndadd();
+  res.redirect("/");
 });
 
 router.get("/:title", Auth.authGuard, QuizController.getQuizPage);

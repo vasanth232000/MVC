@@ -1,0 +1,45 @@
+[
+    {
+        "id": "STUD_ID_1",
+        "data": [
+            {
+                "title": "java",
+                "score": 25
+            },
+            {
+                "title": "Java adv",
+                "score": 10
+            },
+            {
+                "title": "node.js",
+                "score": 25
+            }
+        ]
+    },
+    {
+        "id": "STUD_ID_2",
+        "data": [
+            {
+                "title": "java",
+                "score": 25
+            },
+            {
+                "title": "Java adv",
+                "score": 10
+            }
+        ]
+    },
+    {
+        "id": "STUD_ID_3",
+        "data": [
+            {
+                "title": "java",
+                "score": 25
+            },
+            {
+                "title": "Java adv",
+                "score": 10
+            }
+        ]
+    }
+]
